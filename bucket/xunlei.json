@@ -1,0 +1,25 @@
+{
+    "version": "12.0.14.2602",
+    "description": "xunlei client",
+    "homepage": "https://www.xunlei.com/",
+    "license": "Freeware",
+    "url": "https://down.sandai.net/thunder11/XunLeiSetup12.0.14.2602.exe#/dl.7z",
+    "hash": "840b7ec0d29cf9cac74f1376794f4840469622aac8d3cff7e71fa8ae94d8762d",
+    "persist": "profiles",
+    "shortcuts": [
+        [
+            "Program/Thunder.exe",
+            "Thunder"
+        ]
+    ],
+    "checkver": {
+        "url": "https://static-xl9-ssl.xunlei.com/json/xl11_official_page.json",
+        "regex": "XunLeiSetup([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://down.sandai.net/thunder11/XunLeiSetup$version.exe#/dl.7z",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
